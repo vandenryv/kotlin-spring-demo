@@ -5,9 +5,9 @@ import java.time.format.DateTimeFormatterBuilder
 import java.util.*
 
 
-fun LocalDateTime.format(): String = this.format(englishDateFormatter)
+fun LocalDateTime.format(): String = this.format(frenchDateFormatter)
 
-private val englishDateFormatter = DateTimeFormatterBuilder()
-    .appendPattern("yyyy-MM-dd")
+private val frenchDateFormatter = DateTimeFormatterBuilder()
+    .appendPattern("dd-MM-yyyy")
     .appendLiteral(" ")
     .toFormatter(Locale.FRENCH)

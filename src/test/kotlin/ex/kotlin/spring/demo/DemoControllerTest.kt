@@ -20,6 +20,5 @@ class DemoControllerTest(
         val entity = restTemplate.getForEntity<String>("/hello")
         assertThat(entity.statusCode).isEqualTo(HttpStatus.OK)
         assertThat(entity.body).contains("hello_world")
-
     }
 }
